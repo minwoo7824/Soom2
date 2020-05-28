@@ -34,6 +34,8 @@ public class TestActivity extends AppCompatActivity {
     private static OAuthLogin mOAuthLoginInstance;
     private static Context mContext;
 
+
+    
     /**
      * UI 요소들
      */
