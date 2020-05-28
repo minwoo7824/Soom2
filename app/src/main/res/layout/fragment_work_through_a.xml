@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:weightSum="584"
+    android:orientation="vertical"
+    tools:context=".InsertActivity.Fragment.WorkThroughA">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="45"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="47"
+        android:layout_marginLeft="39dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="회원가입 완료!"
+            android:textColor="#191919"
+            android:textSize="32sp"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/notosanscjkkr_bold"></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="44"
+        android:layout_marginLeft="39dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="함께하면 건강해지는\n숨케어에 오신 것을 환영합니다."
+            android:textSize="16sp"
+            android:textColor="#626262"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="55.7"></LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="230.5"
+        android:orientation="horizontal"
+        android:weightSum="360"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/soom_care_logo"></ImageView>
+    </LinearLayout>
+ </LinearLayout>

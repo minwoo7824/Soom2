@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".DrugControl.Fragment.ChildFragment.DrugListFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/recycler_view_fragment_drug_list"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:background="#f2f2f4"-->
+    <!--        android:text = "HO"-->
+    <!--        android:overScrollMode="never"></androidx.recyclerview.widget.RecyclerView>-->
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="556"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_behavior=".Home.HomeItem.FixedAppBarLayoutBehavior">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="185dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/drug_list_banner"/>
+
+                    <LinearLayout
+                        android:id="@+id/lin_drug_complete"
+                        android:layout_width="match_parent"
+                        android:layout_height="84dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="4dp"
+                            android:background="@color/fafafa"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="복용 완료"
+                                android:textSize="18sp"
+                                android:textColor="#2e2e2e"
+                                android:fontFamily="@font/notosanscjkkr_medium"
+                                android:layout_marginLeft="24dp"
+                                android:layout_marginTop="27dp"
+                                android:layout_marginBottom="26dp"
+                                android:includeFontPadding="false"></TextView>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical|right">
+                                <TextView
+                                    android:id="@+id/count_taking_complete"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:layout_marginRight="12dp"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:gravity="center"
+                                    android:includeFontPadding="false"
+                                    android:fontFamily="@font/notosanscjkkr_medium"></TextView>
+                                <ImageView
+                                    android:layout_width="27dp"
+                                    android:layout_height="27dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_chevron_right_black_24dp"
+                                    android:layout_marginRight="24dp"></ImageView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:background="@color/fafafa"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/lin_drug_current_plus"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:contentInsetStart="0dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginBottom="26dp"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"
+                    android:text="약 추가"
+                    android:textColor="#2e2e2e"
+                    android:textSize="18sp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right">
+
+                    <ImageView
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:scaleType="fitXY"
+                        android:layout_marginRight="24dp"
+                        android:src="@drawable/ic_add_black_24dp"></ImageView>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_drug_current_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_drug_test"
+                android:overScrollMode="never"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"></androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

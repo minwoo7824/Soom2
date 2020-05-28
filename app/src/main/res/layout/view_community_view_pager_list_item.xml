@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/img_community_view_pager_list_item_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

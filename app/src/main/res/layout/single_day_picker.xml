@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="100"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.kmw.soom2.Common.DateTimePicker.WheelYearPicker
+                android:id="@+id/yearPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:wheel_atmospheric="true"
+                app:wheel_item_align="right"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <com.kmw.soom2.Common.DateTimePicker.WheelMonthPicker
+                android:id="@+id/monthPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:wheel_atmospheric="true"
+                app:wheel_item_align="right" />
+
+
+            <com.kmw.soom2.Common.DateTimePicker.WheelDayPicker
+                android:id="@+id/daysPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:wheel_atmospheric="true"
+                app:wheel_item_align="right" />
+
+            <com.kmw.soom2.Common.DateTimePicker.WheelDayOfMonthPicker
+                android:id="@+id/daysOfMonthPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:wheel_atmospheric="true"
+                app:wheel_item_align="right" />
+
+            <com.kmw.soom2.Common.DateTimePicker.WheelHourPicker
+                android:id="@+id/hoursPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                app:wheel_atmospheric="true"
+                app:wheel_item_align="center" />
+
+            <com.kmw.soom2.Common.DateTimePicker.WheelMinutePicker
+                android:id="@+id/minutesPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:wheel_atmospheric="true"
+                app:wheel_item_align="center" />
+
+            <com.kmw.soom2.Common.DateTimePicker.WheelAmPmPicker
+                android:id="@+id/amPmPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="30dp"
+                app:wheel_atmospheric="true"
+                app:wheel_item_align="center"
+                app:wheel_visible_item_count="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_picker_btn_parent"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <Button
+                android:id="@+id/btn_picker_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@drawable/radius_right_bottom_5dp"
+                android:backgroundTint="@color/edeef4"
+                android:text="취소"
+                android:textAllCaps="false"
+                android:textSize="18dp"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/btn_picker_done"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@drawable/radius_left_bottom_5dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="확인"
+                android:textSize="18dp"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="100">
+            <View
+                android:id="@+id/dtSelector"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wheelSelectorHeight"
+                android:layout_gravity="center_vertical"
+                android:alpha="0.2"
+                android:background="@color/picker_default_selector_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_picker_view_parent"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+    </LinearLayout>
+
+</FrameLayout>

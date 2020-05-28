@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPage.Activity.HospitalSearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="100"
+            android:background="@color/white"
+            android:elevation="1dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="15"></LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="70"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="병원검색"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/txt_hospital_search_back"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="15"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="취소"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ededed"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="12dp"
+                android:layout_height="match_parent"></LinearLayout>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_search_black_24dp"
+                android:tint="@color/acacac"/>
+
+            <LinearLayout
+                android:layout_width="8dp"
+                android:layout_height="match_parent"></LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_hospital_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="90"
+                android:background="@null"
+                android:hint="병원을 검색하세요."
+                android:textColorHint="@color/acacac"
+                android:textColor="@color/black"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textSize="14dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ededed"></LinearLayout>
+
+        <ListView
+            android:id="@+id/list_view_hospital_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scrollbars="none"></ListView>
+    </LinearLayout>
+
+</LinearLayout>

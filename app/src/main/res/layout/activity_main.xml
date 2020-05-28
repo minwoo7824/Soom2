@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="672"
+    tools:context=".Home.HomeActivity.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="616">
+
+        <com.kmw.soom2.Home.HomeItem.SwipeViewPager
+            android:id="@+id/fragment_layout_activity_main"
+            android:name="com.kmw.fragmenttest.AFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.kmw.soom2.Home.HomeItem.SwipeViewPager>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#e7e7e7"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="56"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="360">
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tab"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            app:tabIndicatorColor="#ffffff">
+        </com.google.android.material.tabs.TabLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+

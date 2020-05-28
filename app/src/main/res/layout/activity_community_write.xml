@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommunityFragmentFunc.Activitys.CommunityWriteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#ffffff"
+            android:elevation="1dp">
+            <TextView
+                android:id="@+id/txt_community_write_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/back_btn_image"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:gravity="left|center_vertical"
+                android:text="Back"
+                android:textColor="#343434"
+                android:textSize="18sp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/src_community_write">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="16dp"
+                        android:layout_height="match_parent"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="100"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="7dp"></LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="13dp"
+                            android:textColor="@color/black"
+                            android:text="카테고리"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"></LinearLayout>
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:scrollbars="none">
+                            <LinearLayout
+                                android:id="@+id/lin_community_write_tag_parent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"></LinearLayout>
+                        </HorizontalScrollView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/bolder">
+                            <EditText
+                                android:id="@+id/edt_community_writing_tag_insert"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@null"
+                                android:hint="직접 Tag 입력(# 미입력) "
+                                android:textSize="13dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:imeOptions="actionDone"
+                                android:textColor="@color/black"
+                                android:inputType="text"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="9dp"></LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="11dp"></LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_community_write_contents_length"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="내용(0/5000)"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_community_writing_contents"
+                    android:layout_width="match_parent"
+                    android:layout_height="203dp"
+                    android:background="@drawable/bolder"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+
+                    <EditText
+                        android:id="@+id/edt_community_writing_contents"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="start"
+                        android:background="@null"
+                        android:inputType="textMultiLine"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/black"
+                        android:hint="내용을 입력해주세요."
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:overScrollMode="always"
+                        android:textSize="14dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:background="@color/white">
+                    <LinearLayout
+                        android:layout_width="16dp"
+                        android:layout_height="wrap_content"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="100"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="사진첨부"
+                            android:textSize="13dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="12dp"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="100">
+
+                            <HorizontalScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="67dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="bottom">
+
+                                    <LinearLayout
+                                        android:id="@+id/lin_community_write_picture"
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:background="@drawable/border"
+                                        android:orientation="vertical"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="24dp"
+                                            android:src="@drawable/ic_community_camera"/>
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/acacac"
+                                            android:text="0/5"
+                                            android:textSize="13dp"
+                                            android:gravity="center"/>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="12dp"
+                                        android:layout_height="match_parent"/>
+
+                                    <LinearLayout
+                                        android:id="@+id/lin_community_write_picture_parent"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="bottom">
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </HorizontalScrollView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"></LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="16dp"
+                        android:layout_height="wrap_content"></LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:gravity="center"
+            android:background="@color/white">
+            <Button
+                android:id="@+id/btn_community_write_finish"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="게시하기"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/radius_4dp"
+                android:backgroundTint="@color/color33d16b"
+                android:textSize="18dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

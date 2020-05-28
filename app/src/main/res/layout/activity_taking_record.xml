@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="672"
+    tools:context=".Home.HomeActivity.TakingRecordActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="120"
+            android:drawableLeft="@drawable/back_btn_image"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="left|center_vertical"
+            android:text="Back"
+            android:textColor="#343434"
+            android:textSize="18sp"></TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="120"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="복용기록"
+            android:textColor="#343434"
+            android:textSize="18sp"></TextView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="120"></LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="120">
+
+            <TextView
+                android:id="@+id/prev_day_text_view_activity_taking_record"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:text="이전"
+                android:textColor="#000000"
+                android:textSize="14sp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="120"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/date_text_view_activity_taking_record"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:gravity="center"
+                android:text="test"
+                android:textColor="#000000"
+                android:textSize="14sp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="120"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/next_day_text_view_activity_taking_record"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:text="다음"
+                android:textColor="#000000"
+                android:textSize="14sp"></TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="484">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_activity_taking_record"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+    </androidx.recyclerview.widget.RecyclerView>
+        <LinearLayout
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fafafa"
+            android:orientation="vertical"
+            android:weightSum="484">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="75"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="44"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="360">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="174"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="해당 날짜에\n복용 중인 약이 없습니다."
+                    android:textColor="#000000"
+                    android:textSize="16sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="11"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="24"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="360">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="210"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="약관리에서 약을 추가해주세요"
+                    android:textColor="#000000"
+                    android:textSize="16sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="76"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="360">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/logo_activity_taking_record"></ImageView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="88"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/time_choice_button_radius"
+                android:paddingLeft="41dp"
+                android:paddingTop="15dp"
+                android:paddingRight="41dp"
+                android:paddingBottom="14dp"
+                android:text="시간 선택"
+                android:textColor="#000000"
+                android:textSize="18sp"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/success_button_radius"
+                android:paddingLeft="41dp"
+                android:paddingTop="15dp"
+                android:paddingRight="41dp"
+                android:paddingBottom="14dp"
+                android:text="지금 복용"
+                android:textColor="#ffffff"
+                android:textSize="18sp"></Button>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:weightSum="672"
+    tools:context=".Home.HomeActivity.SymptomActivitys.AsthmaControlActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <TextView
+            android:id="@+id/txt_asthma_first_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="120"
+            android:drawableLeft="@drawable/back_btn_image"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="left|center_vertical"
+            android:text="Back"
+            android:textColor="#343434"
+            android:textSize="18sp"></TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="120"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="천식조절검사"
+            android:textColor="#343434"
+            android:textSize="18sp"></TextView>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="#ededed"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="36.5"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="190"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="190"
+            android:src="@drawable/asthma_logo"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="27"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="44"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="284"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="천식이 잘 관리되고 있는지\n확인하는 검사입니다."
+            android:textColor="#cc000000"
+            android:textSize="16sp"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="284"
+            android:text="@string/recommend"
+            android:textSize="16sp"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:textColor="#cc000000"
+            android:gravity="center"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="51"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="56"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="360">
+        <Button
+            android:id="@+id/btn_asthma_first_adult"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="320"
+            android:background="@drawable/success_button_radius"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:text="성인용"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"></Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="56"
+        android:gravity="center"
+        android:weightSum="360"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_asthma_first_kids"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="320"
+            android:background="@drawable/success_button_radius"
+            android:text="소아용(4세 ~ 11세)"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:gravity="center"
+            android:includeFontPadding="false"></Button>
+    </LinearLayout>
+
+</LinearLayout>

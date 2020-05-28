@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/radius_dialog"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="title"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#2c2c2c"
+        android:id="@+id/txt_dialog_number_picker_title"/>
+
+    <NumberPicker
+        android:layout_width="300dp"
+        android:layout_height="188dp"
+        android:theme="@style/AppTheme.Picker"
+        android:id="@+id/number_picker"></NumberPicker>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:weightSum="100">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:text="취소"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:background="@drawable/radius_right_bottom_5dp"
+            android:backgroundTint="@color/edeef4"
+            android:id="@+id/btn_dialog_number_picker_cancel"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:textColor="@color/white"
+            android:text="확인"
+            android:textSize="18dp"
+            android:background="@drawable/radius_left_bottom_5dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:id="@+id/btn_dialog_number_picker_done"/>
+    </LinearLayout>
+</LinearLayout>

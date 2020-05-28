@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp">
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="match_parent"/>
+        
+        <ImageView
+            android:id="@+id/img_like_list_item_profile"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_user_profile"/>
+
+        <LinearLayout
+            android:layout_width="16dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/txt_like_list_item_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="12dp"/>
+    </LinearLayout>
+</LinearLayout>

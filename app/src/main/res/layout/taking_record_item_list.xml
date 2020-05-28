@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:weightSum="320"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/drug_image"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"></ImageView>
+    <TextView
+        android:id="@+id/mention_item"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        android:text="아스마넥스트위스200㎍"
+        android:fontFamily="@font/notosanscjkkr_medium"
+        android:textSize="14sp"
+        android:layout_marginRight="59dp"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right|center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/state_emergency_button_radius"
+            android:text="먹음"
+            android:includeFontPadding="false"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:gravity="center"></TextView>
+    </LinearLayout>
+
+
+</LinearLayout>

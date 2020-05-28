@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:weightSum="584"
+    android:orientation="vertical"
+    tools:context=".InsertActivity.Fragment.WorkThroughB">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="87"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="190"
+        android:gravity="center"
+
+        android:orientation="horizontal"
+        android:weightSum="360">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="190"
+            android:background="@drawable/back"
+            android:src="@drawable/symptom_record_logo"></ImageView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="47"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="47"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="360">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="116"
+            android:textSize="32sp"
+            android:text="증상기록"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:textColor="#191919"
+            android:includeFontPadding="false"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="44"
+        android:orientation="horizontal"
+        android:weightSum="360"
+        android:gravity="center">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="210"
+            android:textColor="#626262"
+            android:text="간편하게 기록하고\n내게 맞는 관리법을 알 수 있어요"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textSize="16sp"
+            android:fontFamily="@font/notosanscjkkr_medium"></TextView>
+    </LinearLayout>
+</LinearLayout>

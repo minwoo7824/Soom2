@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/lin_medicine_alarm_list_item_parent"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:paddingBottom="22dp"
+        android:paddingTop="22dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <TextView
+            android:id="@+id/txt_medicine_alarm_list_item_time_status"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:text="오후"
+            android:gravity="bottom"/>
+
+        <LinearLayout
+            android:layout_width="4dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/txt_medicine_alarm_list_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="28dp"
+            android:textColor="@color/black"
+            android:text="12:00"
+            android:gravity="bottom"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/txt_medicine_alarm_list_item_sun"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:text="일"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="8dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/txt_medicine_alarm_list_item_mon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:text="월"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="8dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/txt_medicine_alarm_list_item_tue"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:text="화"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="8dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/txt_medicine_alarm_list_item_wed"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:text="수"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="8dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/txt_medicine_alarm_list_item_thur"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:text="목"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="8dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/txt_medicine_alarm_list_item_fri"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:text="금"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="8dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/txt_medicine_alarm_list_item_sat"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:text="토"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+
+        <Switch
+            android:id="@+id/swh_medicine_alarm_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:gravity="center"
+            android:thumb="@drawable/switch_track_thumb_selector"
+            android:track="@drawable/switch_track_selector" />
+    </LinearLayout>
+
+</LinearLayout>

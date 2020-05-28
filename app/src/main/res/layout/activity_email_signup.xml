@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="672"
+    tools:context=".InsertActivity.InsertActivity.EmailSignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <TextView
+            android:id="@+id/back_text_view_activity_email_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/back_btn_image"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="left|center_vertical"
+            android:text="Back"
+            android:textColor="#343434"
+            android:textSize="18sp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="31">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="left"
+            android:includeFontPadding="false"
+            android:text="회원가입"
+            android:textColor="#343434"
+            android:textSize="21sp"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/notosanscjkkr_medium_regular"
+            android:includeFontPadding="false"
+            android:text="아이디(이메일)"
+            android:textColor="#343434"
+            android:textSize="12sp"></TextView>
+
+        <TextView
+            android:id="@+id/email_warning_activity_email_signup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/notosanscjkkr_medium_regular"
+            android:gravity="right|center"
+            android:imeOptions="actionNext"
+            android:includeFontPadding="false"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:visibility="invisible"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <EditText
+            android:id="@+id/email_edit_activity_email_signup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/notosanscjkkr_medium_regular"
+            android:hint="이메일을 입력해주세요."
+            android:includeFontPadding="false"
+            android:inputType="textNoSuggestions"
+            android:nextFocusDown="@+id/password_edit_activity_email_signup"
+            android:singleLine="true"
+            android:textColor="#343434"
+            android:textColorHint="#acacac"
+            android:textSize="15sp"
+            android:theme="@style/EditTheme"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/notosanscjkkr_medium_regular"
+            android:includeFontPadding="false"
+            android:text="비밀번호"
+            android:textColor="#343434"
+            android:textSize="12sp"></TextView>
+
+        <TextView
+            android:id="@+id/password_warning_activity_email_signup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/notosanscjkkr_medium_regular"
+            android:gravity="right|center"
+            android:includeFontPadding="false"
+            android:textSize="12sp"
+            android:visibility="invisible"></TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <EditText
+            android:id="@+id/password_edit_activity_email_signup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/notosanscjkkr_medium_regular"
+            android:hint="알파벳, 숫자를 조합, 6자리 이상 "
+            android:includeFontPadding="false"
+            android:inputType="textPassword"
+            android:nextFocusDown="@id/nickname_edit_activity_email_signup"
+            android:singleLine="true"
+            android:textColor="#343434"
+            android:textColorHint="#acacac"
+            android:textSize="15sp"
+            android:theme="@style/EditTheme"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/notosanscjkkr_medium_regular"
+            android:includeFontPadding="false"
+            android:text="닉네임"
+            android:textColor="#343434"
+            android:textSize="12sp"></TextView>
+
+        <TextView
+            android:id="@+id/nickname_warning_activity_email_signup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/notosanscjkkr_medium_regular"
+            android:gravity="right|center"
+            android:includeFontPadding="false"
+            android:textSize="12sp"
+            android:visibility="invisible"></TextView>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <EditText
+            android:id="@+id/nickname_edit_activity_email_signup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/notosanscjkkr_medium_regular"
+            android:hint="닉네임을 입력해주세요."
+            android:includeFontPadding="false"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#343434"
+            android:textColorHint="#acacac"
+            android:textSize="15sp"
+            android:theme="@style/EditTheme"></EditText>
+
+        <TextView
+            android:id="@+id/edit_text_count_text_view_activity_email_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/edit_text_count_max_text_view_activity_email_signup"
+            android:fontFamily="@font/notosanscjkkr_medium_regular"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="0"
+            android:textColor="#343434"
+            android:textSize="15sp"></TextView>
+        <TextView
+            android:id="@+id/edit_text_count_max_text_view_activity_email_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignEnd="@+id/nickname_edit_activity_email_signup"
+            android:fontFamily="@font/notosanscjkkr_medium_regular"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="/8"
+            android:textColor="#343434"
+            android:textSize="15sp"></TextView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="291"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="56">
+
+        <Button
+            android:id="@+id/success_btn_activity_email_signup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#8C8C8C"
+            android:enabled="false"
+            android:fontFamily="@font/notosanscjkkr_medium_regular"
+            android:gravity="center"
+            android:text="다음"
+            android:textColor="#ffffff"
+            android:textSize="18sp"></Button>
+    </LinearLayout>
+</LinearLayout>
