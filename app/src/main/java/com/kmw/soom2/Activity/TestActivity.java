@@ -35,7 +35,7 @@ public class TestActivity extends AppCompatActivity {
     private static Context mContext;
 
 
-    
+
     /**
      * UI 요소들
      */
