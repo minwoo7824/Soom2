@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/radius_calendar"
+    android:orientation="vertical"
+    android:weightSum="320"
+    tools:context=".InsertActivity.InsertActivity.DatePickerDialogActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="65">
+
+        <TextView
+            android:id="@+id/txt_date_picker_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="center"
+            android:text="확진일"
+            android:textColor="#343434"
+            android:textSize="18sp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d5d5d5"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="188"
+        android:background="#ffffff"
+        android:gravity="center">
+
+        <DatePicker
+            android:id="@+id/date_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:theme="@style/MyBase.TimePicker"></DatePicker>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="67"
+        android:orientation="horizontal"
+        android:weightSum="320">
+
+        <Button
+            android:id="@+id/cancel_button_activity_date_picker_dialog"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="160"
+            android:background="@drawable/dialog_cancel_button"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:text="취소"
+            android:textColor="#000000"
+            android:textSize="18sp"></Button>
+
+        <Button
+            android:id="@+id/confirm_button_activity_date_picker_dialog"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="160"
+            android:background="@drawable/confirm_button"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:text="확인"
+            android:textColor="#ffffff"
+            android:textSize="18sp"></Button>
+    </LinearLayout>
+
+</LinearLayout>

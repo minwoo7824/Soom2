@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".CommunityFragmentFunc.Activitys.CommunitySearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="100"
+            android:background="@color/white"
+            android:elevation="1dp">
+            <TextView
+                android:id="@+id/txt_community_search_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/back_btn_image"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:gravity="left|center_vertical"
+                android:text="Back"
+                android:textColor="#343434"
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="100"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:text="게시글 검색"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/back_btn_image"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:gravity="left|center_vertical"
+                android:text="Back"
+                android:textColor="#343434"
+                android:textSize="16dp"
+                android:visibility="invisible"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="@color/white"
+            android:weightSum="100">
+            <LinearLayout
+                android:layout_width="16dp"
+                android:layout_height="match_parent"></LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_community_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="100"
+                android:hint="검색어를 입력해주세요."
+                android:textSize="21dp"
+                android:textColorHint="@color/acacac"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                app:backgroundTint="@color/black" />
+
+            <LinearLayout
+                android:layout_width="16dp"
+                android:layout_height="match_parent"></LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lin_community_search_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:weightSum="100">
+                <LinearLayout
+                    android:layout_width="16dp"
+                    android:layout_height="wrap_content"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="100"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"></LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        android:text="카테고리로 검색"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"></LinearLayout>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp">
+
+                        <LinearLayout
+                            android:id="@+id/lin_community_search_category_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/list_view_community_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:dividerHeight="8dp"
+                android:background="@color/white"
+                android:visibility="gone"></ListView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

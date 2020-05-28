@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_weight="336"
+    android:background="#fafafa"
+    android:orientation="horizontal"
+    android:paddingTop="11.5dp"
+    android:paddingBottom="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/notosanscjkkr_medium"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:includeFontPadding="false"
+        android:id="@+id/list_item_section_text"
+        android:text="2019-12-30(일)"
+        android:textColor="#626262"
+        android:textSize="16dp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+        <ImageView
+            android:id="@+id/direction_button"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|right"
+            android:src="@drawable/direction_icon"></ImageView>
+    </LinearLayout>
+
+</LinearLayout>

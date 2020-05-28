@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="672"
+    android:background="#ffffff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".Home.HomeActivity.SymptomActivitys.SymptomRecord">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <TextView
+            android:id="@+id/txt_symptom_record_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="120"
+            android:drawableLeft="@drawable/back_btn_image"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="left|center_vertical"
+            android:text="Back"
+            android:textColor="#343434"
+            android:textSize="18sp"></TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="120"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="증상기록"
+            android:textColor="#343434"
+            android:textSize="18sp"></TextView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="120"
+            android:gravity="center_vertical|right">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/trash"
+                android:id="@+id/trash_activity_symptom_record"
+                android:layout_marginRight="16dp"></ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#f5f5f5"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <TextView
+            android:id="@+id/txt_symptom_record_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="test"
+            android:textColor="#000000"
+            android:textSize="14sp"></TextView>
+
+        <TextView
+            android:id="@+id/txt_symptom_record_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:gravity="center_vertical|right"
+            android:includeFontPadding="false"
+            android:text="test"
+            android:textColor="#000000"
+            android:textSize="14sp"></TextView>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_view_activity_symptom_record"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="494"
+        android:overScrollMode="never"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="360">
+
+                <RadioGroup
+                    android:id="@+id/symptom_toggle_btn_activity_symptom_record"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="320"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:background="@drawable/toggle_btn">
+
+                    <RadioButton
+                        android:id="@+id/symptom_1_activity_symptom_record"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="80"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="기침"
+                        android:background="@drawable/toggle_btn"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/notosanscjkkr_medium"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/symptom_2_activity_symptom_record"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+                        android:layout_weight="80"
+                        android:background="@drawable/toggle_btn"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="호흡곤란"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/notosanscjkkr_medium"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/symptom_3_activity_symptom_record"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="80"
+                        android:background="@drawable/toggle_btn"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="천명음"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/notosanscjkkr_medium"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/symptom_4_activity_symptom_record"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+                        android:layout_weight="80"
+                        android:background="@drawable/toggle_btn"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="가슴답답함"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/notosanscjkkr_medium"></RadioButton>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:text="증상이 발생한 원인은 무엇인가요?"
+                    android:textColor="#343434"
+                    android:textSize="14sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="18dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:includeFontPadding="false"
+                    android:text="*보고서에서 선택한 원인의 관리법을 알 수 있습니다."
+                    android:textColor="#acacac"
+                    android:textSize="12sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp">
+
+                <GridView
+                    android:id="@+id/grid_view_activity_symptom_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/girdlayout_border"
+                    android:numColumns="4"
+                    android:orientation="horizontal"></GridView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:text="메모(선택)"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="12dp"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="163dp">
+
+                <EditText
+                    android:id="@+id/memo_edit_text_activity_symptom_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/edit_text_border"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:gravity="top"
+                    android:hint="증상이 있을 때 다른 특이 사항은 없으셨나요?"
+                    android:includeFontPadding="false"
+                    android:inputType="textNoSuggestions|textMultiLine"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="12dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#bababa"
+                    android:textSize="14sp"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:overScrollMode="always"
+                    android:theme="@style/EditTheme1"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ededed"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/success_btn_activity_symptom_record"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15.5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/success_button_radius"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:text="완료"
+            android:textColor="#ffffff"
+            android:textSize="18sp">
+
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

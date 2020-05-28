@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "508666544978",
+    "firebase_url": "https://soomcare-9d51f.firebaseio.com",
+    "project_id": "soomcare-9d51f",
+    "storage_bucket": "soomcare-9d51f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508666544978:android:6e443324097ffa5b44b08b",
+        "android_client_info": {
+          "package_name": "com.kmw.soom2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508666544978-m0bmg1fu66s1mh63g51gf0kfm86c5043.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kmw.soom2",
+            "certificate_hash": "ec14e2ba5fa0376b5aa2748f93ac53dd15fd07bb"
+          }
+        },
+        {
+          "client_id": "508666544978-9u7duj8a93gkckg74ii5j4nlle021n8c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDmHclNjUGvZ3rig8emB1BZflVvrff_04"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508666544978-9u7duj8a93gkckg74ii5j4nlle021n8c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "508666544978-91k9f9fllm0nc4vpsc8n0bsm683un8af.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.signature.SoomCare",
+                "app_store_id": "1498028879"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/choice_background"
+    android:orientation="vertical"
+    android:weightSum="672"
+    tools:context=".InsertActivity.InsertActivity.SearchIdResultActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:includeFontPadding="false"
+            android:gravity="center"
+            android:text="누가 사용하시나요?"
+            android:textColor="#ffffff"
+            android:textSize="22sp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <ImageView
+            android:id="@+id/choice_me_activity_user_choice"
+            android:layout_width="0dp"
+            android:layout_weight="280"
+            android:adjustViewBounds="true"
+            android:src="@drawable/choice_me"
+            android:layout_height="wrap_content"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <ImageView
+            android:id="@+id/choice_parent_activity_user_choice"
+            android:layout_width="0dp"
+            android:layout_weight="280"
+            android:src="@drawable/choice_parent"
+            android:adjustViewBounds="true"
+            android:layout_height="match_parent"></ImageView>
+
+    </LinearLayout>
+
+</LinearLayout>

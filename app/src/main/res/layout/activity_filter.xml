@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="672"
+    tools:context=".Home.HomeActivity.FilterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1080">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="489"></LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="102"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="필터"
+            android:textColor="#343434"
+            android:textSize="18dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="489"
+            android:gravity="right|center_vertical">
+
+            <ImageView
+                android:id="@+id/img_filter_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_close_black_24dp"></ImageView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="#ededed"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="27.5"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="63"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="258"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="카테고리를 선택해\n원하는 기록만 모아볼 수 있습니다."
+            android:textColor="#2e2e2e"
+            android:textSize="18sp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="190"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="최소 1개 이상 선택되어 있어야 합니다."
+            android:textColor="#acacac"
+            android:textSize="12sp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="124"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="124">
+
+            <LinearLayout
+                android:id="@+id/checkbox_drug_activity_filter_parent"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="62"
+                android:gravity="center_vertical">
+
+                <CheckBox
+                    android:id="@+id/checkbox_drug_activity_filter"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="12dp"
+                    android:button="@null"
+                    android:background="@drawable/custom_check_box_1"></CheckBox>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:text="약"
+                    android:textColor="#2e2e2e"
+                    android:textSize="16sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/checkbox_asthma_activity_filter_parent"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="62"
+                android:gravity="center_vertical">
+
+                <CheckBox
+                    android:id="@+id/checkbox_asthma_activity_filter"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="12dp"
+                    android:button="@null"
+                    android:background="@drawable/custom_check_box_1"></CheckBox>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:text="천식조절검사"
+                    android:textColor="#2e2e2e"
+                    android:textSize="16sp"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="124">
+
+            <LinearLayout
+                android:id="@+id/checkbox_symptom_activity_filter_parent"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="62"
+                android:gravity="center_vertical">
+
+                <CheckBox
+
+                    android:id="@+id/checkbox_symptom_activity_filter"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="20dp"
+                    android:button="@null"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/custom_check_box_1"></CheckBox>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:text="증상"
+                    android:textColor="#2e2e2e"
+                    android:textSize="16sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/checkbox_dust_activity_filter_parent"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="62"
+                android:gravity="center_vertical">
+
+                <CheckBox
+                    android:id="@+id/checkbox_dust_activity_filter"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:button="@null"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/custom_check_box_1"></CheckBox>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:text="미세먼지"
+                    android:textColor="#2e2e2e"
+                    android:textSize="16sp"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="124">
+
+            <LinearLayout
+                android:id="@+id/checkbox_lungs_activity_filter_parent"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="62"
+                android:gravity="center_vertical">
+
+                <CheckBox
+                    android:id="@+id/checkbox_lungs_activity_filter"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:button="@null"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/custom_check_box_1"></CheckBox>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:text="폐기능"
+                    android:textColor="#2e2e2e"
+                    android:textSize="16sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/checkbox_memo_activity_filter_parent"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="62"
+                android:gravity="center_vertical">
+
+                <CheckBox
+                    android:id="@+id/checkbox_memo_activity_filter"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="20dp"
+                    android:button="@null"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/custom_check_box_1"></CheckBox>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:text="메모"
+                    android:textColor="#2e2e2e"
+                    android:textSize="16sp"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="251"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="88">
+        <Button
+            android:id="@+id/success_btn_activity_filter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/success_button_radius"
+            android:text="완료"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15.5dp"
+            android:layout_marginBottom="16dp"
+            android:stateListAnimator="@null"></Button>
+
+    </LinearLayout>
+
+</LinearLayout>

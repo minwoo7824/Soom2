@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="672"
+    tools:context=".InsertActivity.InsertActivity.SearchIdResultActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="87"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="190"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/id_check_logo"></ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="94"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="54"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="54">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="27"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:includeFontPadding="false"
+            android:text="요청하신 계정의 아이디는"
+            android:textColor="#343434"
+            android:textSize="16sp"></TextView>
+
+        <TextView
+            android:id="@+id/search_result_id_activity_search_id_result"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="27"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:includeFontPadding="false"
+            android:text=""
+            android:textColor="#343434"
+            android:textSize="16sp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="191"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="56">
+
+        <Button
+            android:id="@+id/login_success_btn_activity_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#33d16b"
+            android:fontFamily="@font/notosanscjkkr_medium_regular"
+            android:gravity="center"
+            android:text="완료"
+            android:textColor="#ffffff"
+            android:textSize="18sp"></Button>
+    </LinearLayout>
+</LinearLayout>

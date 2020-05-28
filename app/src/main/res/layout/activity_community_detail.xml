@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".CommunityFragmentFunc.Activitys.CommunityDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/txt_community_detail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/back_btn_image"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="left|center_vertical"
+            android:text="Back"
+            android:textColor="#343434"
+            android:textSize="18sp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="12dp"/>
+
+    <ScrollView
+        android:id="@+id/src_community_detail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lin_community_detail_comment_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_comment_no" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/acacac"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:text="아직 댓글이 없습니다."/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/acacac"
+                    android:textSize="13dp"
+                    android:gravity="center"
+                    android:text="가장 먼저 댓글을 남겨보세요."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_community_detail_comment_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"></LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/border">
+
+        <EditText
+            android:id="@+id/edt_community_detail_comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="댓글을 작성해주세요."
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textColorHint="@color/acacac"
+            android:layout_marginLeft="20dp"
+            android:background="@null"/>
+
+        <Button
+            android:id="@+id/btn_community_detail_comment_send"
+            android:layout_width="67dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:text="게시"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+    </LinearLayout>
+</LinearLayout>

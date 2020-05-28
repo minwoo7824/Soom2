@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_width="12dp"
+            android:layout_height="match_parent"></LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_comment_list_item_profile"
+            android:layout_width="34dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_user_profile"/>
+
+        <LinearLayout
+            android:layout_width="17dp"
+            android:layout_height="match_parent"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="100"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txt_comment_list_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="아이디"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_comment_list_item_more"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_more" />
+
+        <LinearLayout
+            android:layout_width="12dp"
+            android:layout_height="match_parent"></LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"></LinearLayout>
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="17dp"
+            android:layout_height="wrap_content"></LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_comment_list_item_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:paddingRight="14dp"
+            android:autoLink="web"
+            android:textColor="@color/black"
+            android:textSize="14dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"></LinearLayout>
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="17dp"
+            android:layout_height="wrap_content"></LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_comment_list_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/acacac"
+            android:textSize="14dp"></TextView>
+
+        <TextView
+            android:id="@+id/txt_comment_list_item_recomment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="12dp"
+            android:textSize="14dp"
+            android:textColor="@color/acacac"
+            android:text="답글달기"
+            android:gravity="right"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:id="@+id/lin_comment_list_item_parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"/>
+    </LinearLayout>
+</LinearLayout>

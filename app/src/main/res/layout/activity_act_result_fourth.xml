@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".StaticFunc.Activitys.ActResult.StaticActResultFourthActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/txt_check_fourth_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/back_btn_image"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="left|center_vertical"
+            android:text="Back"
+            android:textColor="#343434"
+            android:textSize="18sp"></TextView>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:background="@color/f5f5f5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        android:text="질문 4"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="4/5"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/txt_act_result_fourth_question"
+                    android:text="@string/adult_check_first_text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="14dp"/>
+
+            <RadioGroup
+                android:id="@+id/rdo_check_fourth_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp">
+                <RadioButton
+                    android:id="@+id/rdo_check_fourth1"
+                    android:layout_width="wrap_content"
+                    android:button="@drawable/custom_check_box_1"
+                    android:layout_height="48dp"
+                    android:text="항상 그랬어요"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:checked="false"
+                    android:paddingLeft="10dp"/>
+
+                <RadioButton
+                    android:id="@+id/rdo_check_fourth2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="대부분의 시간동안 그랬어요"
+                    android:button="@drawable/custom_check_box_1"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:paddingLeft="10dp"/>
+
+                <RadioButton
+                    android:id="@+id/rdo_check_fourth3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="다소의 시간 동안 그랬어요"
+                    android:textColor="@color/black"
+                    android:button="@drawable/custom_check_box_1"
+                    android:textSize="16dp"
+                    android:paddingLeft="10dp"/>
+
+                <RadioButton
+                    android:id="@+id/rdo_check_fourth4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="아주 약간의 시간동안 그랬어요"
+                    android:button="@drawable/custom_check_box_1"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:paddingLeft="10dp"/>
+
+                <RadioButton
+                    android:id="@+id/rdo_check_fourth5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="전혀 그렇지 않았어요"
+                    android:textColor="@color/black"
+                    android:button="@drawable/custom_check_box_1"
+                    android:textSize="16dp"
+                    android:paddingLeft="10dp"/>
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_check_fourth_next"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/radius_4dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="다음"
+            android:textColor="@color/white"
+            android:textSize="18dp"></Button>
+
+    </LinearLayout>
+
+</LinearLayout>

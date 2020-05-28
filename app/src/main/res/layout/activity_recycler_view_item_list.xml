@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_weight="336"
+    android:background="#ffffff"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/recycler_view_color"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_recycler_view_parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="334"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:includeFontPadding="false"
+                android:id="@+id/title_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="24sp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:gravity="center"
+                android:text="label"
+                android:textColor="#DB000000"
+                android:textSize="16sp"></TextView>
+
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/img_memo_path"
+                android:layout_width="16dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_memo_img"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical">
+
+                <TextView
+                    android:includeFontPadding="false"
+                    android:id="@+id/time_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24sp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:text="label"
+                    android:textColor="#c1c1c1"
+                    android:textSize="10sp"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin_recycler_View_list_item_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>

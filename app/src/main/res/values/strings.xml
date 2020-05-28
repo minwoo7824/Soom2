@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">숨케어</string>
+    <string name="kakao_app_key">1a4c1cf941ede51771bbfc1588e37a01</string>
+    <string name="pollution_info">대기오염 정보제공 출처 : 환경부 / 환경공단\n\n데이터 오류 가능성:데이터는 실시간 관측된 자료이며\n측정소 현지
+     사정이나 데이터의 수신상태에 따라 미수\n신될 수 있습니다.</string>
+    <string name="recommend">한 달에 한 번 주기적인 검사가 권장되며
+            \n의료진은 검사 결과를 참고해
+            \n치료 단계를 난추거나 올릴 수 있습니다.</string>
+
+    <string name="breath_detail_text">1. 최대호기유속기의 바늘이 \&apos;0\&apos;에 오게 하세요.\n\n
+        2. 바로 서서 입을 벌리고 숨을 깊게 들이마시세요.\n\n
+        3. 입술로 기계의 입구를 막아 공기가 새지 않도록 한 후 최대한 빠르고 힘차게 숨을 내뱉으세요.\n\n
+        4. 바늘이 움직인 곳의 수치를 읽고 1~4의 과정을\n2회 더 반복하세요.\n\n
+        5. 총 3회의 측정 중 가장 높은 수치를 입력하세요.</string>
+
+    <string name="breath_detail_text2">흡입제를 사용 하기 전에 측정해야합니다.\n\n
+하루 2번 아침 저녁으로 측정해야합니다.</string>
+
+    <string name="adult_check_first_text">지난 4주 동안 당신은\n직장이나 학교, 집에서 평소 했던 만큼\n일하고 공부하고 활동하는데 있어\n\n천식으로 인해\n얼마나 많은 시간을 지장 받았습니까?</string>
+    <string name="adult_check_second_text">지난 4주 동안 당신은\n얼마나 자주 숨을 헐떡거렸거나\n숨을 쉬기가 어려웠습니까?</string>
+    <string name="adult_check_third_text">지난 4주 동안 혹은 지난 방문 이후,\n천식(쌕쌕거리는 소리,기침,숨가쁨)으로 인해\n얼마나 밤에 잠을 깨거나 아침에 평소보다\n일찍일어났습니까?</string>
+    <string name="adult_check_four_text">지난 4주 동안 당신은\n응급약물(예를 들면 살부타몰, 페노테롤, 벤토린,\n베로텍 등)을\n 얼마나 자주 사용했습니까?</string>
+    <string name="adult_check_five_text">당신은 4주 동안 천식을\n얼마나 잘 조절했다고 평가하겠습니까?</string>
+
+
+    <string name="kids_check_four_text">지난 3개월 동안, 아이의 호흡기 증상\n(쌕쌕거림,기침,숨가쁨)을 속효성증상\n완화제(벤토린,살부타몰,살부톨,컴비벤트 등)\n로 치료해야 했던 적이 몇번이나 있었습니까?</string>
+    <string name="kids_check_five_text">지난 12개동 동안, 다른 약물로 조절되지 않는 호홉기 증상때문에 아이가 경구용(먹는) 스테로이드제(소론도, 피알디, 프레론, 프레드니, 프레드니솔론, 푸레나, 페니클에스, 니소론, 신티손, 카바론등)를 복용해야 했던 적이 몇 번이나 있었습니까?</string>
+
+
+    <string name="adult_check_fourth_text">지난 4주 동안 당신은\n응급약물(예를 들면 살부타몰, 페노테롤, 벤토린,\n베로텍 등)을\n 얼마나 자주 사용했습니까?</string>
+    <string name="adult_check_fifth_text">당신은 4주 동안 천식을\n얼마나 잘 조절했다고 평가하겠습니까?</string>
+
+    <string name="adult_check_page1_rdo_1">항상 그랬어요</string>
+    <string name="adult_check_page1_rdo_2">대부분의 시간동안 그랬어요</string>
+    <string name="adult_check_page1_rdo_3">다소의 시간 동안 그랬어요</string>
+    <string name="adult_check_page1_rdo_4">아주 약간의 시간동안 그랬어요</string>
+    <string name="adult_check_page1_rdo_5">전혀 그렇지 않았어요</string>
+
+    <string name="adult_check_page2_rdo_1">하루에 한번 이상 그랬어요</string>
+    <string name="adult_check_page2_rdo_3">일주일에 3~4번 그랬어요</string>
+    <string name="adult_check_page2_rdo_4">일주일에 1~2번 그랬어요</string>
+    <string name="adult_check_page2_rdo_5">전혀 그렇지 않았어요</string>
+
+    <string name="adult_check_page3_rdo_1">일주일에 4일 밤 이상을 그랬어요</string>
+    <string name="adult_check_page3_rdo_3">일주일에 한번 그랬어요</string>
+    <string name="adult_check_page3_rdo_4">한 두번 그랬어요</string>
+    <string name="adult_check_page3_rdo_5">전혀 그렇지 않았어요</string>
+
+    <string name="adult_check_page4_rdo_1">하루에 3번 이상 사용했어요</string>
+    <string name="adult_check_page4_rdo_3">일주일에 2~3번 사용했어요</string>
+    <string name="adult_check_page4_rdo_4">일주일에 한번 이하로 사용했어요</string>
+    <string name="adult_check_page4_rdo_5">전혀 그렇지 않았어요</string>
+
+    <string name="adult_check_page5_rdo_1">전혀 조절하지 못했어요</string>
+    <string name="adult_check_page5_rdo_3">다소 조절했어요</string>
+    <string name="adult_check_page5_rdo_4">잘 조절했어요</string>
+    <string name="adult_check_page5_rdo_5">완벽하게 조절했어요</string>
+
+    <string name="kids_check_first_text">지난 4주 동안 호흡기 증상(쌕쌕거림\n기침,숨가쁨 등) 때문에\n아이가 힘들어한 적이\n몇 번이나 있었습니까?</string>
+    <string name="kids_check_second_text">지난 4주 동안 호흡기 증상(쌕쌕거림\n기침,숨가쁨 등) 때문에\n아이가 밤에 자다가 꺠어난 적이\n몇 번이나 있었습니까?</string>
+    <string name="kids_check_third_text">지난 4주 동안 호흡기 증상(쌕쌕거림\n기침,숨가쁨 등) 때문에\n아이가 놀거나, 학교에 가거나\n또래 아이들이 하는 정도의 일상생활을\n하는데에 얼마나 지장이 있었습니까?</string>
+    <string name="kids_check_fourth_text">지난 3개월 동안, 아이의 호흡기 증상\n(쌕쌕거림,기침,숨가쁨)을 속효성증상\n완화제(벤토린,살부타몰,살부톨,컴비벤트 등)\n로 치료해야 했던 적이 몇번이나 있었습니까?</string>
+    <string name="kids_check_fifth_text">지난 12개동 동안, 다른 약물로 조절되지 않는 호홉기 증상때문에 아이가 경구용(먹는) 스테로이드제(소론도, 피알디, 프레론, 프레드니, 프레드니솔론, 푸레나, 페니클에스, 니소론, 신티손, 카바론등)를 복용해야 했던 적이 몇 번이나 있었습니까?</string>
+
+    <string name="kids_check_page1_rdo_1">한 번도 없었음</string>
+    <string name="kids_check_page1_rdo_2">4주에 한두 번</string>
+    <string name="kids_check_page1_rdo_3">1주에 한번</string>
+    <string name="kids_check_page1_rdo_4">1주에 2-3번</string>
+    <string name="kids_check_page1_rdo_5">1주에 4번 이상</string>
+
+    <string name="kids_check_page2_rdo_1">한 번도 없었음</string>
+    <string name="kids_check_page2_rdo_2">4주에 한두 번</string>
+    <string name="kids_check_page2_rdo_3">1주에 한번</string>
+    <string name="kids_check_page2_rdo_4">1주에 2-3번</string>
+    <string name="kids_check_page2_rdo_5">1주에 4번 이상</string>
+
+    <string name="kids_check_page3_rdo_1">전혀 없었음</string>
+    <string name="kids_check_page3_rdo_2">약간 있었음</string>
+    <string name="kids_check_page3_rdo_3">중간정도 있었음</string>
+    <string name="kids_check_page3_rdo_4">상당히 있었음</string>
+    <string name="kids_check_page3_rdo_5">매우 심하게 있었음</string>
+
+    <string name="kids_check_page4_rdo_1">한 번도 없었음</string>
+    <string name="kids_check_page4_rdo_2">4주에 한두 번</string>
+    <string name="kids_check_page4_rdo_3">1주에 한번</string>
+    <string name="kids_check_page4_rdo_4">1주에 2-3번</string>
+    <string name="kids_check_page4_rdo_5">1주에 4번 이상</string>
+
+    <string name="kids_check_page5_rdo_1">한 번도 없었음</string>
+    <string name="kids_check_page5_rdo_2">4주에 한두 번</string>
+    <string name="kids_check_page5_rdo_3">1주에 한번</string>
+    <string name="kids_check_page5_rdo_4">1주에 2-3번</string>
+    <string name="kids_check_page5_rdo_5">1주에 4번 이상</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="here"><u>\&apos;여기\&apos;</u></string>
+
+    <string name="question_text"><u>측정 방법 보기</u></string>
+    <string name="dust_text"><u>미세먼지 환경기준 보기</u></string>
+
+    <string name="picker_today">오늘</string>
+    <string name="picker_am">오전</string>
+    <string name="picker_pm">오후</string>
+
+    <string name="result_title1">양호</string>
+    <string name="result_vice_title1">증상이\n잘 조절되고 있습니다.</string>
+    <string name="result_vice_contents1">증상으로 인한 활동제한이 주 3회 미만이며\n야간증상으로 인한 수면 방해가 없었습니다.\n\n현재 복용 중인 약을 유지하세요.\n앞으로도 조절이 잘 지속된다면\n증상유지를 위한 최소치료 단계를\n찾아가 실 수 있습니다.</string>
+
+    <string name="result_title2">주의</string>
+    <string name="result_vice_title2">증상이 부분적으로만\n조절되고 있습니다.</string>
+    <string name="result_vice_contents2">증상으로 인한 활동제한이 주 3회 이상이며\n야간증상으로 인한 수면 방해가 있었습니다.\n\n현재 복용 중인 약물 및 치료방향이\n적절한지 검토가 필요합니다.\n증상을 없애기 위하여\n치료단계를 높일 지 고려가 필요합니다.\n의사선생님과 상의하세요.</string>
+
+    <string name="result_title3">위험</string>
+    <string name="result_vice_title3">증상이\n조절되지 않고 있습니다.</string>
+    <string name="result_vice_contents3">빈번한 증상으로 인한 활동제한이 많으며\n야간증상으로 인한 수면방해가 있었습니다.\n\n현재 복용 중인 약물 및 치료방향이\n적절한지 검토가 필요합니다.\n증상이 온전히 조절될 때 까지\n치료단계를 높일 필요가 있습니다.\n의사선생님과 상의하세요</string>
+
+    <string name="review_insert_hint">※ 약에 대한 자세한 리뷰를 남겨주세요\n\n갈증이 나거나, 졸음이 오는 등의\n부작용은 없었는지 증상 개선은 있었는지,\n\n이 약에 대해 도움이 되는 정보를\n풍성하게 남겨주세요.</string>
+
+    <string name="result_breath_good">이 상태가 3달 이상 지속되면 약제 감량을 고려할 수\n있습니다. 약제 감량 및 증가는 모두 의사와 상의\n하에 변경해야 합니다.</string>
+    <string name="result_breath_warning">증상 악화 시 흡입용 속효성 베타2항진제의\n용량을 일시적으로 증량하고 폐활량수치의 변동률이\n줄어들 때 까지 경구용 스테로이드를 단기간 사용할\n수 있습니다. 흡입용 스테로이드를 사용하던 환자는\n용량을 두배로 증가시킬 수 있습니다. 약제 감량 및\n증가는 모두 의사와 상의 하에 변경해야 합니다.</string>
+    <string name="result_breath_danger">처방 계획대로 약을 복용하면서, 흡입용 속효성\n베타 2 항진제를 즉시 흡입해야 합니다. 응급시 사용해야\n하는 약을 흡입해주세요. 즉각적인 병원치료가\n필요할 수 있습니다.</string>
+    <string name="result_breath_data_none">폐기능 기록이 부족해 결과를 분석할 수 없습니다.\n하루 2번 이상 기록해주세요</string>
+
+    <string name="result_breath_good_title">양호</string>
+    <string name="result_breath_warning_title">주의</string>
+    <string name="result_breath_danger_title">위험</string>
+    <string name="result_breath_data_none_title">결과가 없습니다</string>
+
+    <string name="result_asthma_good_status">조절(양호)</string>
+    <string name="result_asthma_warning_status">부분조절(주의)</string>
+    <string name="result_asthma_danger_status">조절안됨(위험)</string>
+
+    <string name="breath_no_result_detail">폐기능 검사 중 하나인 최대호기유속 측정은\n
+숨을 최대로 들이쉰 상태에서 힘껏 숨을 내쉬었을 때 \n
+숨의 최고 속도를 의미합니다.\n\n
+
+측정값의 변화를 토대로 상태를 분석합니다.\n
+따라서 하루 2개 이상의 측정값이 있어야 변화률을 계산해 분석결과를 제공할 수 있습니다.\n\n
+
+최소 하루 2번 아침, 저녁으로 최대호기유속을 측정하고 측정값을 기록해주세요  \n\n
+
+천식이 잘 조절되고 있는지, \n
+약을 조절할 필요는 없을 지 알려드릴께요 </string>
+
+
+</resources>

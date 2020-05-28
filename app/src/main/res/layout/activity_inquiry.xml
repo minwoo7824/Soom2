@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="672"
+    tools:context=".MyPage.Activity.InquiryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <TextView
+            android:id="@+id/back_text_view_activity_inquiry"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="120"
+            android:drawableLeft="@drawable/back_btn_image"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="left|center_vertical"
+            android:text="Back"
+            android:textColor="#343434"
+            android:textSize="18sp"></TextView>
+
+        <TextView
+            android:id="@+id/txt_inquiry_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="120"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="신고하기"
+            android:textSize="16dp"
+            android:visibility="gone"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group_activity_inquiry"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="120"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/inquiry_radio_btn_activity_inquiry"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="160"
+                android:background="@drawable/inquiry_radio_button_checked_a"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:button="@null"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="문의"
+                android:textColor="#ffffff"
+                android:textSize="12sp"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/declaration_radio_btn_activity_inquiry"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="160"
+                android:includeFontPadding="false"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:background="@drawable/inquiry_radio_button_b"
+                android:button="@null"
+                android:gravity="center"
+                android:text="신고"
+                android:textColor="#33d16b"
+                android:textSize="12sp"></RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="#ededed"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="19.5"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:text="답변 받으실 이메일"
+            android:textColor="#343434"
+            android:textSize="12sp"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <EditText
+            android:id="@+id/email_edit_text_activity_inquiry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:hint="이메일을 입력해 주세요"
+            android:textColor="#343434"
+            android:textColorHint="#bababa"
+            android:includeFontPadding="false"
+            android:textSize="21sp"
+            android:theme="@style/EditTheme"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"></LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18"
+        android:paddingLeft="20dp"
+        android:paddingRight="28dp">
+
+        <TextView
+            android:id="@+id/inquiry_text_view_activity_inquiry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:text="문의내용"
+            android:textColor="#343434"
+            android:textSize="12sp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/edit_text_count_text_view_activity_inquiry"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="("
+            android:textColor="#343434"
+            android:textSize="12sp"></TextView>
+
+        <TextView
+            android:id="@+id/edit_text_count_text_view_activity_inquiry"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/edit_text_count_max_text_view_activity_inquiry"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:text="0"
+            android:textColor="#343434"
+            android:textSize="12sp"></TextView>
+
+        <TextView
+            android:id="@+id/edit_text_count_max_text_view_activity_inquiry"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignEnd="@+id/inquiry_text_view_activity_inquiry"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="/5000)"
+            android:textColor="#343434"
+            android:textSize="12sp"></TextView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="252"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <EditText
+            android:id="@+id/inquiry_edit_text_activity_inquiry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text_border"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:gravity="top"
+            android:hint="내용을 입력해주세요."
+            android:includeFontPadding="false"
+            android:inputType="textNoSuggestions|textMultiLine"
+            android:paddingLeft="12dp"
+            android:paddingTop="12dp"
+            android:paddingRight="20dp"
+            android:textColor="#343434"
+            android:textColorHint="#bababa"
+            android:textSize="14sp"
+            android:theme="@style/EditTheme1"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="140.5"></LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="#ededed"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="88"
+        android:paddingLeft="20dp"
+        android:paddingTop="16dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="16dp">
+
+        <Button
+            android:id="@+id/send_button_activity_inquiry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/success_button_radius"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:includeFontPadding="false"
+            android:text="보내기"
+            android:textColor="#ffffff"
+            android:textSize="18sp"></Button>
+    </LinearLayout>
+</LinearLayout>

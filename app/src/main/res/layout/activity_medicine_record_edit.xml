@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.HomeActivity.SymptomActivitys.MedicineRecordEditActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <TextView
+            android:id="@+id/txt_medicine_record_edit_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="120"
+            android:drawableLeft="@drawable/back_btn_image"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="left|center_vertical"
+            android:text="Back"
+            android:textColor="#343434"
+            android:textSize="18sp"></TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="120"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="복용기록 편집"
+            android:textColor="#343434"
+            android:textSize="18sp"></TextView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="120"
+            android:gravity="center_vertical|right">
+            <TextView
+                android:id="@+id/txt_medicine_record_edit_all_remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전체삭제"
+                android:textColor="@color/acacac"
+                android:layout_marginRight="16dp"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#f5f5f5"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <TextView
+            android:id="@+id/txt_medicine_record_edit_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="test"
+            android:textColor="@color/acacac"
+            android:textSize="14sp"></TextView>
+
+        <TextView
+            android:id="@+id/txt_medicine_record_edit_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:gravity="center_vertical|right"
+            android:includeFontPadding="false"
+            android:text="test"
+            android:textColor="@color/acacac"
+            android:textSize="14sp"></TextView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_medicine_record_edit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/ededed"
+        android:dividerHeight="1dp"/>
+</LinearLayout>

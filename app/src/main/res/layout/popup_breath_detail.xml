@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="측정 방법"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:includeFontPadding="false"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginLeft="23dp"/>
+
+        <ImageView
+            android:id="@+id/img_breath_detail_popup_close"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_close_black_24dp"/>
+
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/f5f5f5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="165dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_breath_detail_chapter1" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_breath_detail_chapter2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="22dp"
+                android:layout_marginLeft="22dp"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:text="@string/breath_detail_text"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="* 주의사항"
+                android:textColor="@color/colorff0000"
+                android:textSize="15dp"
+                android:layout_marginLeft="22dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="22dp"
+                android:layout_marginLeft="22dp"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:text="@string/breath_detail_text2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@color/white">
+        <Button
+            android:id="@+id/btn_breath_detail_popup_more"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/radius_4dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="더 알아보기"
+            android:textColor="@color/white"
+            android:textSize="18dp"></Button>
+    </LinearLayout>
+
+</LinearLayout>

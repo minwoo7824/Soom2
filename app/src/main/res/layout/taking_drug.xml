@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="1dp"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+    android:weightSum="360">
+
+    <TextView
+        android:id="@+id/taking_drug_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="26dp"
+        android:fontFamily="@font/notosanscjkkr_medium"
+        android:includeFontPadding="false"
+        android:text="현재 복용 중인 약"
+        android:textColor="#2e2e2e"
+        android:textSize="18sp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|right">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24dp"
+            android:src="@drawable/ic_add_black_24dp"></ImageView>
+    </LinearLayout>
+
+
+</LinearLayout>

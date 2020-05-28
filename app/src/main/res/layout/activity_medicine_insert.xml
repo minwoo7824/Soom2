@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Home.HomeActivity.MedicineInsert.MedicineInsertActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/img_medicine_insert_back"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/back_btn_image"/>
+
+        <TextView
+            android:id="@+id/txt_medicine_insert_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="56dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_medicine_insert_remove"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/trash"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"></ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_medicine_insert_img"
+                android:layout_width="match_parent"
+                android:layout_height="196dp"
+                android:src="@drawable/drug_alarm_banner"
+                android:scaleType="fitXY"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+
+                    <TextView
+                        android:id="@+id/txt_medicine_insert_first"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:text="설정"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_medicine_insert_second"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:text="정보"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_medicine_insert_third"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:text="리뷰"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp">
+
+                    <LinearLayout
+                        android:id="@+id/lin_medicine_insert_line_first"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"/>
+
+                    <LinearLayout
+                        android:id="@+id/lin_medicine_insert_line_second"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:visibility="invisible"/>
+
+                    <LinearLayout
+                        android:id="@+id/lin_medicine_insert_line_third"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:visibility="invisible"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="21dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lin_medicine_insert_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="16dp"
+                            android:text="1회 복용량"
+                            android:fontFamily="@font/notosanscjkkr_medium"
+                            android:textColor="@color/black" />
+
+                        <LinearLayout
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="16dp"
+                            android:text="투약단위"
+                            android:fontFamily="@font/notosanscjkkr_medium"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp">
+
+                        <EditText
+                            android:id="@+id/edt_medicine_insert_first_amount"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="16dp"
+                            android:gravity="center_vertical"
+                            android:hint="투약량 설정"
+                            android:inputType="number"
+                            android:textColorHint="@color/acacac"
+                            android:textColor="@color/black"
+                            android:background="@drawable/bolder"
+                            android:paddingLeft="12dp"/>
+
+                        <LinearLayout
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content"/>
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center|right"
+                                android:layout_marginRight="12dp"
+                                android:src="@drawable/ic_keyboard_arrow_down"/>
+
+                            <TextView
+                                android:id="@+id/txt_medicine_insert_first_unit"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textSize="16dp"
+                                android:gravity="center_vertical"
+                                android:hint="단위선택"
+                                android:textColorHint="@color/black"
+                                android:textColor="@color/black"
+                                android:background="@drawable/bolder"
+                                android:paddingLeft="12dp"/>
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="16dp"
+                        android:text="일일 복용횟수"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center|right"
+                            android:layout_marginRight="12dp"
+                            android:src="@drawable/ic_keyboard_arrow_down"/>
+
+                        <TextView
+                            android:id="@+id/txt_medicine_insert_first_cnt"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:textSize="16dp"
+                            android:gravity="center_vertical"
+                            android:text="투약단위"
+                            android:textColor="@color/black"
+                            android:background="@drawable/bolder"
+                            android:paddingLeft="12dp"/>
+
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="16dp"
+                        android:text="시작일"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center|right"
+                            android:layout_marginRight="12dp"
+                            android:src="@drawable/ic_calendar_medicine"/>
+                        <TextView
+                            android:id="@+id/txt_medicine_insert_first_start_dt"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:textSize="16dp"
+                            android:gravity="center_vertical"
+                            android:hint="시작일을 선택하세요."
+                            android:textColorHint="@color/d5d5d5"
+                            android:textColor="@color/black"
+                            android:background="@drawable/bolder"
+                            android:paddingLeft="12dp"/>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="16dp"
+                        android:text="종료일"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center|right"
+                            android:layout_marginRight="12dp"
+                            android:src="@drawable/ic_calendar_medicine"/>
+
+                        <TextView
+                            android:id="@+id/txt_medicine_insert_first_end_dt"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:textSize="16dp"
+                            android:gravity="center_vertical"
+                            android:hint="종료일을 선택하세요."
+                            android:textColorHint="@color/d5d5d5"
+                            android:textColor="@color/black"
+                            android:background="@drawable/bolder"
+                            android:paddingLeft="12dp"/>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_medicine_insert_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"></LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="효능효과"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"></LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt_medicine_insert_second_efficacy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:padding="12dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"></LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="용법용량"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"></LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt_medicine_insert_second_instructions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:padding="12dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"></LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="복약정보"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"></LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt_medicine_insert_second_information"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:padding="12dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"></LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="임산부 안정성 등급"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"></LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt_medicine_insert_second_stability"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:padding="12dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"></LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="주의사항"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"></LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt_medicine_insert_second_precautions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:padding="12dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"></LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_medicine_insert_third"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"/>
+
+                        <LinearLayout
+                            android:id="@+id/lin_medicine_insert_third_review_insert"
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:gravity="center"
+                            android:background="@drawable/radius_4dp"
+                            android:backgroundTint="@color/f5f5f5">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="리뷰를 작성해주세요."
+                                android:textColor="@color/acacac"
+                                android:textSize="16dp"/>
+
+                            <LinearLayout
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"/>
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_review_icon"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lin_medicine_insert_third_review_no_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="48.5dp"/>
+
+                            <ImageView
+                                android:layout_width="46.8dp"
+                                android:layout_height="41.5dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_hand_icon"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25.1dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="16dp"
+                                android:textColor="@color/black"
+                                android:text="작성된 리뷰가 없습니다."
+                                android:gravity="center"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="4dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12dp"
+                                android:textColor="@color/black"
+                                android:text="약을 복용해보셨다면 영광의 첫 리뷰를 남겨주세요 :D"
+                                android:gravity="center"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lin_medicine_insert_third_review_list_parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"/>
+
+                        <Button
+                            android:id="@+id/btn_medicine_insert_review_more"
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:orientation="vertical"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@drawable/success_button_radius"
+                            android:backgroundTint="@color/e7e7e7"
+                            android:fontFamily="@font/notosanscjkkr_medium"
+                            android:text="리뷰 더보기"
+                            android:textColor="#343434"
+                            android:textSize="18sp"
+                            android:visibility="gone">
+                        </Button>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ededed"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_medicine_insert_finish"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/success_button_radius"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:text="약 추가하기"
+            android:textColor="#ffffff"
+            android:textSize="18sp">
+
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="672"
+    tools:context=".MyPage.Activity.PatientInfoActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:orientation="horizontal"
+        android:weightSum="360">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="120">
+            <TextView
+                android:id="@+id/back_text_view_activity_patient_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/back_btn_image"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:gravity="left|center_vertical"
+                android:text="Back"
+                android:textColor="#343434"
+                android:textSize="18sp"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="120"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:textColor="#343434"
+                android:text="환자정보"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="120"
+            android:gravity="end"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="저장"
+                android:textAlignment="textEnd"
+                android:gravity="center"
+                android:id="@+id/txt_patient_info_save"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/notosanscjkkr_medium_regular"
+            android:includeFontPadding="false"
+            android:text="이름"
+            android:textColor="#343434"
+            android:textSize="12sp"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <EditText
+            android:id="@+id/name_edit_text_activity_patient_info"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="320"
+            android:fontFamily="@font/notosanscjkkr_medium_regular"
+            android:hint="hint"
+            android:inputType="textNoSuggestions"
+            android:maxLines="1"
+            android:nextFocusDown="@+id/birth_edit_text_activity_patient_info"
+            android:textColor="#343434"
+            android:textColorHint="#acacac"
+            android:textSize="15sp"
+            android:theme="@style/EditTheme"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/notosanscjkkr_medium_regular"
+            android:includeFontPadding="false"
+            android:text="생년월일"
+            android:textColor="#343434"
+            android:textSize="12sp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <EditText
+            android:id="@+id/birth_edit_text_activity_patient_info"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="320"
+            android:fontFamily="@font/notosanscjkkr_medium_regular"
+            android:hint="hint"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textColor="#343434"
+            android:textColorHint="#acacac"
+            android:textSize="15sp"
+            android:theme="@style/EditTheme"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16"></LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/notosanscjkkr_medium_regular"
+            android:includeFontPadding="false"
+            android:text="성별"
+            android:textColor="#343434"
+            android:textSize="12sp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="48"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <RadioGroup
+            android:id="@+id/gender_toggle_btn_activity_patient_info"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="320"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male_btn_activity_patient_info"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="160"
+                android:background="@drawable/toggle_btn"
+                android:button="@null"
+                android:gravity="center"
+                android:text="남성"
+                android:textColor="#5c5c5c"
+                android:textSize="16sp"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/feamale_btn_activity_patient_info"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:layout_weight="160"
+                android:background="@drawable/toggle_btn"
+                android:button="@null"
+                android:gravity="center"
+                android:text="여성"
+                android:textColor="#5c5c5c"
+                android:textSize="16sp"></RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/notosanscjkkr_medium_regular"
+            android:includeFontPadding="false"
+            android:text="천식확진 여부"
+            android:textColor="#343434"
+            android:textSize="12sp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="48"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="360">
+
+        <RadioGroup
+            android:id="@+id/confirm_toggle_btn_activity_patient_info"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="320"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/confirm_btn_activity_patient_info"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="160"
+                android:background="@drawable/toggle_btn"
+                android:button="@null"
+                android:gravity="center"
+                android:text="확진"
+                android:textColor="#5c5c5c"
+                android:textSize="16sp"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/suspicion_btn_activity_patient_info"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:layout_weight="160"
+                android:background="@drawable/toggle_btn"
+                android:button="@null"
+                android:gravity="center"
+                android:text="의심"
+                android:textColor="#5c5c5c"
+                android:textSize="16sp"></RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18">
+
+        <TextView
+            android:id="@+id/date_info_activity_patient_info"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/notosanscjkkr_medium_regular"
+            android:includeFontPadding="false"
+            android:text="확진일"
+            android:textColor="#343434"
+            android:textSize="12sp"
+            android:visibility="invisible"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="13"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="48"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="360"
+        android:id="@+id/lin_patient_info_calendar">
+
+        <TextView
+            android:id="@+id/calendar_text_view_activity_patient_info"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="320"
+            android:background="@drawable/radius_calendar"
+            android:clickable="false"
+            android:drawableRight="@drawable/ic_event_black_24dp"
+            android:drawableTint="#e7e7e7"
+            android:fontFamily="@font/notosanscjkkr_medium_regular"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="2019-03"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:visibility="invisible"></TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Home.HomeActivity.KidsActivitys.KidsCheckFiveActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/txt_adult_check_five_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/back_btn_image"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="left|center_vertical"
+            android:text="Back"
+            android:textColor="#343434"
+            android:textSize="18sp"></TextView>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:background="@color/f5f5f5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:text="질문 5"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="5/5"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/notosanscjkkr_medium"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:text="@string/kids_check_five_text"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="14dp"/>
+
+            <RadioGroup
+                android:id="@+id/rdo_adult_check_five_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:button="@drawable/custom_check_box_1"
+                    android:layout_height="48dp"
+                    android:text="한 번도 없었음"
+                    android:textColor="@color/acacac"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:id="@+id/rdo_1"
+                    android:textSize="16dp"
+                    android:checked="false"
+                    android:paddingLeft="10dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="4주에 한두 번"
+                    android:button="@drawable/custom_check_box_1"
+                    android:textColor="@color/acacac"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:id="@+id/rdo_2"
+                    android:textSize="16dp"
+                    android:paddingLeft="10dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="1주에 한번"
+                    android:textColor="@color/acacac"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:id="@+id/rdo_3"
+                    android:button="@drawable/custom_check_box_1"
+                    android:textSize="16dp"
+                    android:paddingLeft="10dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="1주에 2-3번"
+                    android:button="@drawable/custom_check_box_1"
+                    android:textColor="@color/acacac"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:id="@+id/rdo_4"
+                    android:textSize="16dp"
+                    android:paddingLeft="10dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="1주에 4번 이상"
+                    android:textColor="@color/acacac"
+                    android:fontFamily="@font/notosanscjkkr_medium"
+                    android:id="@+id/rdo_5"
+                    android:button="@drawable/custom_check_box_1"
+                    android:textSize="16dp"
+                    android:paddingLeft="10dp"/>
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_adult_check_five_next"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/radius_4dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="결과보기"
+            android:textColor="@color/white"
+            android:textSize="18dp"></Button>
+
+    </LinearLayout>
+
+</LinearLayout>

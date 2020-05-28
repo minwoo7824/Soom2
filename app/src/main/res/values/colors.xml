@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#33d16b</color>
+
+    <color name="cursorColor">#8C8C8C</color>
+    <color name="cursorColor1">#ffffff</color>
+    <color name="nomalColor">#8C8C8C</color>
+
+    <color name="e7e7e7">#e7e7e7</color>
+    <color name="d5d5d5">#d5d5d5</color>
+    <color name="ededed">#ededed</color>
+    <color name="bababa">#bababa</color>
+    <color name="e4e4e4">#e4e4e4</color>
+    <color name="f5f6fa">#f5f6fa</color>
+    <color name="color343434">#343434</color>
+    <color name="color467ff4">#467ff4</color>
+
+    <color name="color2751c4">#2751c4</color>
+    <color name="color02b76e">#02b76e</color>
+    <color name="colordebd3d">#debd3d</color>
+    <color name="colorda3539">#da3539</color>
+    <color name="colorff0000">#ff0000</color>
+    <color name="color3382b7">#3382b7</color>
+    <color name="colorefca4a">#efca4a</color>
+    <color name="color8489e2">#8489e2</color>
+
+    <color name="acacac">#acacac</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+
+    <color name="color33d16b">#33d16b</color>
+    <color name="f5f5f5">#f5f5f5</color>
+    <color name="fafafa">#fafafa</color>
+    <color name="edeef4">#edeef4</color>
+    <color name="ff6767">#ff6767</color>
+    <color name="d2d6d9">#d2d6d9</color>
+
+    <color name="staticsGreen">#00c853</color>
+    <color name="staticsYellow">#ffd600</color>
+    <color name="staticsRed">#ff0000</color>
+
+    <color name="picker_default_text_color">#999</color>
+    <color name="picker_default_selected_text_color">@android:color/black</color>
+    <color name="picker_default_selector_color">#646464</color>
+
+    <color name="calendar_day_of_the_week_font">#161d20</color>
+    <color name="calendar_selected_day_font">#FFFFFF</color>
+    <color name="calendar_selected_day_background">#FD4A72</color>
+    <color name="calendar_day_of_the_month_font">#849ba9</color>
+    <color name="calendar_circle_1">#e98885</color>
+    <color name="calendar_circle_2">#55c6da</color>
+    <color name="calendar_circle_ovulation_low">#53ff5f66</color>
+    <color name="calendar_circle_ovulation_normal">#a4ff5f66</color>
+    <color name="color7e7e7e">#7e7e7e</color>
+
+    <color name="statics_result_good">#33d76b</color>
+    <color name="statics_result_warning">#f37d22</color>
+    <color name="statics_result_danger">#fe0b09</color>
+
+    <color name="static_symptom_cough">#024959</color>
+    <color name="static_symptom_wheeze">#f2cb05</color>
+    <color name="static_symptom_breath">#60cec7</color>
+    <color name="static_symptom_stuffy">#d9c3a9</color>
+</resources>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_width="12dp"
+            android:layout_height="match_parent"></LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_community_list_item_profile"
+            android:layout_width="34dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_user_profile"/>
+
+        <LinearLayout
+            android:layout_width="17dp"
+            android:layout_height="match_parent"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="100"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txt_community_list_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="아이디"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_community_list_item_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="yyyy-MM-dd hh:mm"
+                android:textSize="12dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_community_list_item_more"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_more" />
+
+        <LinearLayout
+            android:layout_width="12dp"
+            android:layout_height="match_parent"></LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_community_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager_community_list_item_picture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:focusable="false"
+            android:id="@+id/tab_layout_community_list_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="0dp"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabGravity="center"
+            app:tabPaddingStart="6dp"
+            app:tabPaddingEnd="6dp"
+            app:tabPaddingBottom="9dp"
+            app:tabIndicatorHeight="0dp"></com.google.android.material.tabs.TabLayout>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="16dp"></LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_community_list_item_contents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="49dp"
+        android:autoLink="web"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"></LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_community_list_item_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="#약"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="49dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="12dp"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="49dp">
+
+        <TextView
+            android:id="@+id/txt_community_list_item_like_cnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:textColor="@color/black"
+            android:text="좋아요 0"/>
+
+        <LinearLayout
+            android:layout_width="16dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/txt_community_list_item_comment_cnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:textColor="@color/black"
+            android:text="댓글 0"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="7dp"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <LinearLayout
+            android:layout_width="7dp"
+            android:layout_height="match_parent"></LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_community_list_item_like_icon"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_like_off"/>
+
+        <ImageView
+            android:id="@+id/img_community_list_item_comment_icon"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_comment_off"/>
+
+        <ImageView
+            android:id="@+id/img_community_list_item_copy_icon"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_copy_off"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="7dp"/>
+</LinearLayout>

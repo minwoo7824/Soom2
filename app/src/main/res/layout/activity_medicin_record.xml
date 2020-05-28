@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Home.HomeActivity.SymptomActivitys.MedicinRecordActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="360">
+
+        <TextView
+            android:id="@+id/txt_medicine_record_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/back_btn_image"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="left|center_vertical"
+            android:text="Back"
+            android:textColor="#343434"
+            android:textSize="18sp"></TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="360"
+            android:textSize="18dp"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:includeFontPadding="false"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="복용기록"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/back_btn_image"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:gravity="left|center_vertical"
+            android:text="Back"
+            android:textColor="#343434"
+            android:textSize="18sp"
+            android:visibility="invisible"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/txt_medicine_record_before"
+            android:layout_width="66dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="이전"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:includeFontPadding="false"
+            android:textColor="@color/black"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/txt_medicine_record_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:text=""
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/txt_medicine_record_after"
+            android:layout_width="66dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:includeFontPadding="false"
+            android:text="다음"
+            android:textColor="@color/acacac"
+            android:textSize="14dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_medicine_record_no_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/fafafa"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:text="해당 날짜에\n복용 중인 약이 없습니다."
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="11dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:text="약관리에서 약을 추가해주세요"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:src="@drawable/ic_medicine_icon"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scr_medicine_record_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@drawable/radius_4dp"
+                android:backgroundTint="@color/f5f5f5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="버튼을 눌러 상태를 변경할 수 있습니다."
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:fontFamily="@font/notosanscjkkr_bold"
+                    android:includeFontPadding="false"
+                    android:textSize="12dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="320"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="33dp"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:background="@drawable/radius_4dp"
+                        android:backgroundTint="@color/color33d16b"/>
+
+                    <LinearLayout
+                        android:layout_width="4dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+                        android:text="일반복용"
+                        android:fontFamily="@font/notosanscjkkr_bold"
+                        android:includeFontPadding="false"/>
+
+                    <LinearLayout
+                        android:layout_width="33dp"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:background="@drawable/radius_4dp"
+                        android:backgroundTint="@color/ff6767"/>
+
+                    <LinearLayout
+                        android:layout_width="4dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/notosanscjkkr_bold"
+                        android:includeFontPadding="false"
+                        android:text="응급복용"/>
+
+                    <LinearLayout
+                        android:layout_width="33dp"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:background="@drawable/radius_4dp"
+                        android:backgroundTint="@color/d2d6d9"/>
+
+                    <LinearLayout
+                        android:layout_width="4dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/notosanscjkkr_bold"
+                        android:includeFontPadding="false"
+                        android:text="건너뜀"/>
+
+                    <LinearLayout
+                        android:layout_width="33dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="31dp"/>
+
+            <ListView
+                android:id="@+id/list_medicine_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="20dp"
+                android:divider="@null"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:weightSum="360"
+        android:gravity="center"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/btn_medicine_record_date_select"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="150"
+            android:text="시간선택"
+            android:textColor="@color/black"
+            android:background="@drawable/radius_4dp"
+            android:backgroundTint="@color/edeef4"
+            android:textSize="18dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"/>
+
+        <Button
+            android:id="@+id/btn_medicine_record_finish"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="150"
+            android:text="복용"
+            android:textColor="@color/white"
+            android:background="@drawable/radius_4dp"
+            android:backgroundTint="@color/color33d16b"
+            android:textSize="18dp"/>
+    </LinearLayout>
+</LinearLayout>
